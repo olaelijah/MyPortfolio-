@@ -91,6 +91,43 @@
             }
     
             hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+            .project-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 15px;
+              margin-top: 20px;
+            }
+            
+            .project-card {
+              background: #f9f9f9;
+              border: 1px solid #ddd;
+              border-radius: 10px;
+              padding: 15px;
+              text-align: left;
+              transition: transform 0.3s;
+            }
+            
+            .project-card:hover {
+              transform: translateY(-5px);
+              border-color: #007bff;
+            }
+            
+            .project-card h4 {
+              margin: 0 0 10px 0;
+              color: #121212;
+            }
+            
+            .project-card p {
+              font-size: 14px;
+              color: #555;
+            }
+            
+            .tech-stack {
+              font-size: 11px;
+              font-weight: bold;
+              color: #007bff;
+              text-transform: uppercase;
+            }
     </style>
 </head>
 <body>
@@ -114,12 +151,28 @@
         <p>HTML5 Semantics | Termux | Folder Management</p>
 
         <hr>
-
+        
+        
         <h2>About Me</h2>
         <p>I'm a Mathematician and a passionate tech enthusiast.</p>
 
         <hr>
-
+        <hr>
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h4>Portfolio Website</h4>
+            <p>A professional responsive portfolio built entirely using Termux and Git.</p>
+            <span class="tech-stack">HTML | CSS | Git</span>
+          </div>
+        
+          <div class="project-card">
+            <h4>Math Logic Solver</h4>
+            <p>Coming Soon: A tool to visualize complex mathematical sequences.</p>
+            <span class="tech-stack">JavaScript | Math</span>
+          </div>
+        </div>
+        
         <h2>Connect With Me</h2>
         <a href="mailto:elijaholaniyan40@gmail.com.">📧 Email Me</a>
         <a href="https://wa.me/2348082354941">📱 WhatsApp Me</a>
